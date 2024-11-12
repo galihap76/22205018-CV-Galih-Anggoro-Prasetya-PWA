@@ -1,17 +1,39 @@
-## Website Portofolio 🚀
+## Mata Kuliah Pemrograman Perangkat Bergerak
 
-Ini adalah website portofolio saya. Website ini menampilkan tentang saya dan juga menampilkan projek, sertifikat, dan bidang yang saya tekuni yaitu backend development dan penetration testing. Website ini sebenarnya banyak perubahan, namun saya resmikan pembuatan website portofolio ini sebagai versi yang stabil.
+Repositori ini di gunakan untuk memenuhi tugas mata kuliah pemrograman perangkat bergerak dalam membuat sebuah website dengan fitur sebagai berikut :
 
-Saya banyak mengambil beberapa referensi website milik orang lain agar saya tahu bagaimana tampilan website yang saya buat ini. Website saya ini menggunakan HTML, Bootstrap, JavaScript. Ada juga saya menambahkan CSS sedikit dan juga beberapa library JavaScript. Untuk informasi kontak, saya menggunakan script JavaScript yang telah di tulis oleh orang lain pada <a href="https://github.com/jamiewilson/form-to-google-sheets">form to google sheets</a>.
+- PWA
+- Indexed DB
+- Firebase Cloud Messaging
 
-## Fitur 📱
+## Firebase Config
 
-Fitur bisa di lihat pada tag <a href="https://github.com/galihap76/galihap76.github.io/releases">rilis</a>.
+```javascript
+const firebaseConfig = {
+        apiKey: "************",
+        authDomain: "***********",
+        databaseURL: "***********",
+        projectId: "***********",
+        storageBucket: "***********",
+        messagingSenderId: "***********",
+        appId: "***********",
+        measurementId: "***********",
+};
+```
 
-## Screenshot 📸
+Pada firebase config, tentu saya akan konfigurasikan pada dashboard firebase milik saya pada <a href="https://console.firebase.google.com/u/0/?hl=id">console firebase</a>.
 
-![image](https://github.com/user-attachments/assets/2c8f0a7b-dd6d-49d0-8574-a21f879c0739)
+## VAPID Keys
+
+```javascript
+  getToken(messaging, {
+              serviceWorkerRegistration: registration,
+              vapidKey: "***********",
+})
+```
+
+VAPID Keys yang tentu nya saya dapatkan pada console firebase saya.
 
 ## Penutup
 
-Website portofolio saya ini akan terus saya perbarui jika memang saya ada waktu melakukan nya dan projek sampingan yang saya kerjakan. Terima kasih.
+Sekian terima kasih!
